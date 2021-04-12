@@ -1,0 +1,90 @@
+.modal-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-wrapper.on {
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  padding: 2.5rem;
+
+  background-color: #f0f2f5;
+  border-radius: 0.313rem;
+
+  color: var(--color-card-content);
+  text-align: center;
+}
+
+.modal img {
+  margin-bottom: 1rem;
+}
+
+.modal h3 {
+  margin-bottom: 0.5rem;
+
+  color: var(--color-card-title);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+
+  line-height: 2.625rem;
+}
+
+.modal p {
+  margin-bottom: 2rem;
+}
+
+.modal footer button {
+  padding: 0.75rem 3rem;
+  border-radius: 0.313rem;
+
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal footer button + button {
+  margin-left: 0.5rem;
+}
+
+.modal footer button:nth-child(1) {
+  color: var(--color-card-content);
+  background: var(--color-cancel);
+}
+
+.modal footer button:nth-child(1):hover {
+  background: #eceef0;
+}
+
+.modal footer button:nth-child(2) {
+  background: var(--color-delete);
+}
+
+.modal footer button:nth-child(2):hover {
+  background: #fa3f38;
+}

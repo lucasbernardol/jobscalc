@@ -1,0 +1,69 @@
+aside.card {
+  width: 22rem;
+  margin-left: 4rem;
+  padding: 2.5rem 3.375rem;
+
+  text-align: center;
+}
+
+aside > img {
+  margin-bottom: 1.5rem;
+}
+
+aside p {
+  margin-bottom: 1.75rem;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+aside .button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+aside .button + .button {
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 700px) {
+  #page-job-edit > .container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem auto;
+  }
+
+  #page-job > .container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem auto;
+  }
+
+  .page-header.inner {
+    margin: 0;
+  }
+
+  aside.card {
+    margin: 2rem 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside.card p {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .button-group {
+    margin-top: 1rem;
+  }
+}

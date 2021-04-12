@@ -1,0 +1,74 @@
+#page-profile .page-header ~ .container {
+  display: flex;
+}
+
+#page-profile > .page-header {
+  margin: 0;
+}
+
+#page-profile > .container {
+  margin: 2rem auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+aside.card {
+  width: 20rem;
+  margin-right: 2rem;
+  padding: 2rem 1rem;
+
+  background-color: var(--color-card-background);
+  color: var(--color-card-title);
+
+  border: 1px solid #e1e3e6;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+
+  border: 0.25rem var(--color-secondary) solid;
+}
+
+aside h2 {
+  margin: 1rem 0;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+aside p {
+  margin-bottom: 1.2rem;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  #page-profile > .container {
+    flex-direction: column;
+  }
+
+  aside.card {
+    order: 2;
+    width: 100%;
+
+    margin: 0;
+
+    margin-top: 2rem;
+  }
+}
