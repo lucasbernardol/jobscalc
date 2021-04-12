@@ -1,0 +1,23 @@
+<section id="summary" class="animate-up delay-1">
+  <h2 class="sr-only">Sumário</h2>
+
+  <div class="info">
+    <div class="total">
+      <strong><%= jobsStatusCount.total %></strong>
+      <span>Projetos ao total</span>
+    </div>
+    <div class="in-progress">
+      <strong><%= jobsStatusCount.progress %></strong>
+      <span>Em andamento</span>
+    </div>
+    <div class="finished">
+      <strong><%= jobsStatusCount.done %></strong>
+      <span>Encerrados</span>
+    </div>
+  </div>
+
+  <a class="button orange" href="/job">
+    <span><img src="/assets/plus-24.svg" alt="Novo Job" /></span>
+    Adicionar novo job
+  </a>
+</section>

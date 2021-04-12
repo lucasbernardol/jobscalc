@@ -1,0 +1,15 @@
+<section id="top" class="animate-up">
+  <h2 class="sr-only">Painel de controle</h2>
+  <img id="logo" src="/assets/logo.svg" alt="JobsCalc logo" />
+
+  <span id="notification">
+    <img src="/assets/alert-octagon.svg" alt="Alerta" />
+    <% if (freeHours <= 0) { %> Você não tem horas livres <% } else { %> Você
+    tem <%= freeHours %> horas livres no seu dia <% } %>
+  </span>
+
+  <a href="/profile" id="avatar-profile">
+    <p><%= profile.name %> <span>Ver perfil</span></p>
+    <img src="<%= profile.avatar %>" alt="<%= profile.name %>" />
+  </a>
+</section>

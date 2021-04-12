@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#41414C" />
+    <link rel="shortcut icon" href="/assets/favicon.png" />
+    <title>JobsCalc | Início</title>
+
+    <%- include('components/styles'); %> <%- include('components/fonts'); %>
+
+    <link rel="stylesheet" href="/styles/components/modal.css" />
+    <link rel="stylesheet" href="/styles/pages/index.css" />
+
+    <script src="/scripts/index.js" defer type="module"></script>
+  </head>
+  <body id="page-index">
+    <header class="page-header">
+      <div class="container">
+        <%- include('components/section-top', { profile, freeHours }); %>
+        <div class="separator"></div>
+        <%- include('components/summary', { jobsStatusCount }); %>
+      </div>
+    </header>
+
+    <div class="container">
+      <main class="animate-up delay-2">
+        <h1 class="sr-only">Trabalhos</h1>
+
+        <section class="cards">
+          <% jobs.forEach((job) => { %> <%- include('components/card', { job });
+          %> <% }); %>
+        </section>
+      </main>
+    </div>
+
+    <%- include('components/modal', { id: null }); %>
+  </body>
+</html>

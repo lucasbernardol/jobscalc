@@ -1,0 +1,35 @@
+<div class="card <%= job.status %>" data-id="<%= job.id %>">
+  <span class="id column"><%= job.id %></span>
+  <span class="name column"><%= job.name %></span>
+
+  <div class="deadline column">
+    <span>Prazo</span>
+    <p>
+      <% if (job.status === 'progress') { %> <%= `${job.remaining} dias para a
+      entrega` %> <% } else { %> <%= 'Prazo encerrado' %> <%} %>
+    </p>
+  </div>
+
+  <div class="amount column">
+    <span>Valor</span>
+    <p>R$ <%= Math.floor(Number(job.budget)).toFixed(2) %></p>
+  </div>
+
+  <div class="status badge column">
+    <%= job.status === 'done' ? 'Concluído' : 'Em andamento' %>
+  </div>
+
+  <div class="actions column flex">
+    <a
+      href="/job/<%= job.id %>"
+      class="button white edit radius"
+      title="Editar Job"
+    >
+      <img src="/assets/edit-24.svg" alt="Editar Job" />
+    </a>
+
+    <button class="delete button white radius" title="Excluir Job">
+      <img src="/assets/trash-24.svg" alt="Excluir Job" />
+    </button>
+  </div>
+</div>
