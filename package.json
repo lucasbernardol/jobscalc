@@ -1,0 +1,24 @@
+{
+  "name": "jobscalc",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "José Lucas",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "db:init": "node ./src/database/initialize.js",
+    "db:test": "node ./src/database/test.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.21",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}

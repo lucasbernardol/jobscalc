@@ -1,0 +1,10 @@
+# Folders
+node_modules/
+private/
+
+# Files
+.env
+*.txt
+*.log
+
+test.md
