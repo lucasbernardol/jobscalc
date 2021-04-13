@@ -8,7 +8,7 @@ const JobModel = {
 
     const Database = await DbConnection();
 
-    const query = `SELECT * FROM jobs WHERE userId = ?`;
+    const query = `SELECT * FROM jobs WHERE userId = ? ORDER BY id DESC`;
 
     const jobs = await Database.all(query, [userId]);
 
