@@ -18,7 +18,9 @@ cadastrar e excluir e jobs (projetos ou trabalhos), obtendo uma estimativa
 de custo de cada job. Além disso, é possível traçar o valor da hora
 da pessoa que estará usando o sistema.
 
-## :computer: Tecnologias
+## :rocket: Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
@@ -55,20 +57,19 @@ yarn
 npm install
 npm i
 
-# Execute uma das instruções abaixo para iniciar o servidor
-# de desenvolvimento.
+# Execute uma das instruções abaixo para iniciar a aplicação
 
-# yarn:
-yarn dev
+# yarn start
+yarn start
 
-# npm
-npm run dev
+# npm start
+npm start
 ```
 
 Depois de realizar os procedimentos acima, você pode abrir seu navegador
-favorito na seguinte _url_: `http://localhost:3333`. Bons testes !
+favorito na seguinte **URL**: `http://localhost:3333`. Bons testes :grin:
 
-### :memo: Licença (MIT)
+### :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
 
