@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="#book-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#bulb-implementações">Implementações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#wrench-como-executar-no-ambiente-local">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-instalação-no-ambiente-local">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Persistência de dados utilizando _SQLITE_
 - [x] Middleware 404 (falha de navegação)
 
-## :wrench: Como executar no ambiente local ?
+## :wrench: Instalação no ambiente local
 
 ```bash
 # Faça um clone do repositório
