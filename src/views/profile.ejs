@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" translate="yes">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#41414C" />
     <link rel="shortcut icon" href="/assets/favicon.png" />
-    <title>JobsCalc - Meu perfil</title>
+    <title>JobsCalc - perfil</title>
 
     <%- include('components/styles'); %> <%- include('components/fonts'); %>
 
     <link rel="stylesheet" href="/styles/pages/profile.css" />
+    <script src="/scripts/validate.js" defer type="module"></script>
   </head>
   <body id="page-profile">
-    <%- include('components/page-header', { title: 'Ver meu perfil' }); %>
+    <%- include('components/page-header', { title: 'Visualizar perfil' }); %>
 
     <div class="container">
       <aside class="card">
         <img src="<%= profile.avatar %>" alt="<%= profile.name %>" />
         <h2><%= profile.name %></h2>
-
         <p>
-          O valor da sua hora é
+          O valor da sua hora é: <br />
           <strong>
-            <%= Math.floor(Number(profile.valuePerHour)).toFixed(2) %>
+            R$ <%= Math.floor(Number(profile.valuePerHour)).toFixed(2) %>
           </strong>
         </p>
-
         <button class="button green" form="form-profile" type="submit">
           Salvar dados
         </button>
@@ -40,24 +39,32 @@
 
             <div class="input-group">
               <div class="input-wrapper">
-                <label for="name">Nome</label>
+                <label for="name">Seu nome</label>
+
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value="<%= profile.name %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
 
               <div class="input-wrapper">
-                <label for="avatar">Link da foto</label>
+                <label for="avatar">URL da foto</label>
+
                 <input
                   placeholder="https://"
                   type="url"
                   id="avatar"
                   name="avatar"
                   value="<%= profile.avatar %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
             </div>
           </fieldset>
@@ -72,6 +79,7 @@
                   Quanto eu <br />
                   quero ganhar por mês?
                 </label>
+
                 <input
                   type="amount"
                   step="0.1"
@@ -79,20 +87,27 @@
                   name="monthlyBudget"
                   placeholder="R$"
                   value="<%= profile.monthlyBudget %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
 
               <div class="input-wrapper">
-                <label for="hours-per-day"
-                  >Quantas horas <br />
-                  quero trabalhar por dia?</label
-                >
+                <label for="hours-per-day">
+                  Quantas horas <br />
+                  quero trabalhar por dia?
+                </label>
+
                 <input
                   type="number"
                   id="hours-per-day"
                   name="hoursPerDay"
                   value="<%= profile.hoursPerDay %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
             </div>
 
@@ -102,12 +117,16 @@
                   Quantos dias <br />
                   quero trabalhar por semana?
                 </label>
+
                 <input
                   type="number"
                   id="days-per-week"
                   name="daysPerWeek"
                   value="<%= profile.daysPerWeek %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
 
               <div class="input-wrapper">
@@ -115,12 +134,16 @@
                   Quantas semanas <br />
                   por ano você quer tirar férias?
                 </label>
+
                 <input
                   type="number"
                   id="vacation-per-year"
                   name="vocationPerYear"
                   value="<%= profile.vocationPerYear %>"
+                  required
                 />
+
+                <span class="error-wrapper"></span>
               </div>
             </div>
           </fieldset>
