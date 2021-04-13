@@ -1,16 +1,21 @@
 <h1 align="center">
-  <img alt="JobsCalc" title="JobsCalc" src="https://i.imgur.com/Veqm7Gh.png" width="220px" />
+  <img 
+    alt="JobsCalc" 
+    title="JobsCalc" 
+    src="https://i.imgur.com/Veqm7Gh.png" 
+    width="220px" 
+  />
 </h1>
 
 <p align="center">
-  <a href="#book-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#bulb-implementações">Implementações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#wrench-instalação-no-ambiente-local">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucasbernardol/jobscalc?color=%23f1972c&style=flat-square">
+
+  <img alt="GitHub" src="https://img.shields.io/github/license/lucasbernardol/jobscalc?color=%23f1972c&style=flat-square">
+
+  <img src="https://img.shields.io/badge/author-Jos%C3%A9%20Lucas-%23f1972c" alt="Author">
 </p>
 
-## :book: Descrição
+## :book: Sobre
 
 joabscalc: É uma aplicação que ajuda os profissionais a criarem uma
 estimativa salarial sobre os seus projetos _freelancer_. Onde é possível
@@ -18,15 +23,12 @@ cadastrar e excluir e jobs (projetos ou trabalhos), obtendo uma estimativa
 de custo de cada job. Além disso, é possível traçar o valor da hora
 da pessoa que estará usando o sistema.
 
-## :rocket: Tecnologias
+## :recycle: Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML
-- CSS
 - JavaScript
-- NodeJS
+- CSS
 - EJS
+- NodeJS
 - Express
 - SQLite
 
@@ -35,43 +37,52 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Responsividade
 - [x] Sistema de CRUD
 - [x] Persistência de dados utilizando _SQLITE_
+- [x] Validação de formulário
 - [x] Middleware 404 (falha de navegação)
 
-## :wrench: Instalação no ambiente local
+## :wrench: Como executar no ambiente local ? :grin:
+
+Faça o clone do repositório utilizando o git e em seguida
+navegue até o diretório principal do projeto (root).
 
 ```bash
-# Faça um clone do repositório
-git clone https://www.github.com/lucasbernardol/jobscalc/
+$ git clone https://www.github.com/lucasbernardol/jobscalc/
+$ cd jobscalc/
+```
 
-# Navegue até o diretório root (principal)
-cd jobscalc/
+Faça a instalação das dependências utilizando gerenciadores
+de pacotes como: yarn ou npm.
 
-# Faça a instalação das dependências utilizando gerenciadores
-# de pacotes como: yarn ou npm
+Instalação de dependências via: **yarn**
 
-# Instalação de dependências via: yarn
-yarn install
-yarn
+```bash
+$ yarn install
+$ yarn
+```
 
-# Instalação de dependências: npm
-npm install
-npm i
+Instalação de dependências via: **npm**
 
-# Execute uma das instruções abaixo para iniciar a aplicação
+```bash
+$ npm install
+$ npm i
+```
 
-# yarn start
+Execute uma das instruções abaixo para iniciar a aplicação (Servidor NodeJS).
+
+```bash
 yarn start
-
-# npm start
 npm start
 ```
 
 Depois de realizar os procedimentos acima, você pode abrir seu navegador
-favorito na seguinte **URL**: `http://localhost:3333`. Bons testes :grin:
+favorito na **URL**: `http://localhost:3333`
 
 ### :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
+Esse projeto está sob a licença MIT.
+Veja o arquivo [LICENSE](LICENSE) para mais informações.
+
+---
 
 ### Créditos
 
