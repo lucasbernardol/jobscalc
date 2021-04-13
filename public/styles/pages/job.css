@@ -30,12 +30,51 @@ aside .button + .button {
   height: 3rem;
 }
 
+#page-job > .container,
+#page-job-edit > .container {
+  justify-content: center;
+
+  margin: 3rem auto;
+}
+
+form .input-group .input-wrapper {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+form .input-group .input-wrapper + .input-wrapper {
+  margin: 0;
+  width: 100%;
+}
+
+#page-job .card,
+#page-job-edit .card {
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+#page-job > .page-header.inner,
+#page-job-edit > .page-header.inner {
+  margin: 0;
+}
+
 @media (max-width: 700px) {
   #page-job-edit > .container {
     display: flex;
     flex-direction: column;
 
     margin: 1rem auto;
+  }
+
+  main {
+    width: 90%;
+
+    margin: auto;
   }
 
   #page-job > .container {

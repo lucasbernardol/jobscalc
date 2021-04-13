@@ -15,7 +15,7 @@
 aside.card {
   width: 20rem;
   margin-right: 2rem;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
 
   background-color: var(--color-card-background);
   color: var(--color-card-title);
@@ -33,11 +33,12 @@ aside img {
   height: 8rem;
   border-radius: 50%;
 
-  border: 0.25rem var(--color-secondary) solid;
+  border: 0.25rem var(--color-outline) solid;
 }
 
 aside h2 {
   margin: 1rem 0;
+  text-align: center;
 
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.5rem;
@@ -58,6 +59,27 @@ main {
   flex: 1;
 }
 
+#page-profile .input-group {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#page-profile > .container {
+  align-items: stretch;
+}
+
+#page-profile .card {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#page-profile .input-wrapper {
+  width: 100%;
+}
+
 @media (max-width: 700px) {
   #page-profile > .container {
     flex-direction: column;
@@ -66,9 +88,7 @@ main {
   aside.card {
     order: 2;
     width: 100%;
-
     margin: 0;
-
     margin-top: 2rem;
   }
 }

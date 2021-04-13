@@ -3,7 +3,7 @@ form fieldset {
 }
 
 form fieldset + fieldset {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 
 form fieldset legend {
@@ -11,7 +11,7 @@ form fieldset legend {
 
   font-family: IBM Plex Sans;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.625rem;
 }
 
@@ -22,6 +22,7 @@ fieldset .separator {
 form .input-group {
   display: flex;
   margin-top: 1.5rem;
+  flex-direction: column;
   align-items: flex-end;
 }
 
@@ -36,7 +37,7 @@ label {
   font-weight: 500;
   color: #787880;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 input {
